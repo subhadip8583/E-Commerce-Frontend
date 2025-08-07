@@ -1,0 +1,9 @@
+.product-details-container {
+    margin-top: 20px;
+}
+
+@media screen and (max-width: 768px) {
+    .product-details-container {
+        margin-top: 100px;
+    }
+}

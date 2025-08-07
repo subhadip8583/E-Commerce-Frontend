@@ -1,0 +1,113 @@
+/* Container Setup */
+.verify-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 40px 20px;
+  min-height: 100vh;
+  background-color: #f0f2f5;
+  box-sizing: border-box;
+}
+
+/* Card Style Form */
+.verify-form {
+  background-color: #fff;
+  padding: 20px 30px;
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+  width: 100%;
+  max-width: 420px;
+  box-sizing: border-box;
+}
+
+/* Heading */
+.verify-form h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+/* Instruction text */
+.verify-form p {
+  font-size: 14px;
+  color: #666;
+  text-align: center;
+  margin-bottom: 16px;
+}
+
+/* OTP Input */
+.verify-form input {
+  padding: 12px;
+  width: 100%;
+  font-size: 15px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  outline: none;
+  margin-bottom: 20px;
+  box-sizing: border-box;
+}
+
+.verify-form input:focus {
+  border-color: #00d8ff;
+  box-shadow: 0 0 0 2px rgba(0, 216, 255, 0.2);
+}
+
+/* Verify Button */
+.verify-form button {
+  width: 100%;
+  padding: 12px;
+  background-color: #00d8ff;
+  color: white;
+  border: none;
+  font-weight: 600;
+  border-radius: 8px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.2s ease-in-out;
+}
+
+.verify-form button:hover {
+  background-color: #00b8e6;
+}
+
+/* ✅ Responsive */
+@media (max-width: 480px) {
+  .verify-form {
+    padding: 30px 20px;
+  }
+
+  .verify-form input {
+    font-size: 14px;
+    padding: 10px;
+  }
+
+  .verify-form button {
+    padding: 10px;
+    font-size: 15px;
+  }
+
+  .verify-form p {
+    font-size: 13px;
+  }
+}
+.resend-btn {
+  margin-top: 10px;
+  width: 100%;
+  padding: 10px;
+  font-size: 14px;
+  background-color: #eee;
+  border: none;
+  border-radius: 8px;
+  color: #333;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.resend-btn:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+
+.resend-btn:hover:not(:disabled) {
+  background-color: #ddd;
+}

@@ -1,0 +1,142 @@
+.cart-item-container {
+  padding: 16px 0;
+  width: 100%;
+}
+
+.cart-item-card {
+  display: flex;
+  align-items: flex-start;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+  gap: 16px;
+  box-sizing: border-box;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.cart-item-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 24px rgba(0, 216, 255, 0.12);
+  cursor: default;
+}
+
+.cart-item-img {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  border-radius: 10px;
+  flex-shrink: 0;
+}
+
+.cart-item-content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 8px;
+}
+
+.cart-item-content h3 {
+  margin: 0;
+  font-size: 17px;
+  color: #333;
+}
+
+.cart-item-price {
+  font-weight: 600;
+  color: #555;
+  font-size: 15px;
+}
+
+.cart-item-actions {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 230px;
+  flex-wrap: wrap;
+  margin-top: auto;
+}
+
+.qty-controls {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.qty-controls button {
+  padding: 6px 10px;
+  font-size: 15px;
+  background-color: #eee;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+.qty-controls button:hover {
+  background-color: #00d8ff;
+  color: white;
+}
+
+.qty-controls span {
+  min-width: 24px;
+  text-align: center;
+  font-weight: bold;
+  color: #333;
+}
+
+.remove-btn {
+  background-color: #ff4d4d;
+  color: white;
+  padding: 6px 12px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 14px;
+  white-space: nowrap;
+  transition: background-color 0.25s ease, transform 0.2s ease;
+}
+
+.remove-btn:hover {
+  background-color: #e03e3e;
+  transform: scale(1.05);
+}
+
+/* ✅ Responsive — maintain card layout on small screens */
+@media (max-width: 600px) {
+  .cart-item-card {
+    flex-direction: row;
+    padding: 16px;
+    gap: 12px;
+  }
+
+  .cart-item-img {
+    width: 80px;
+    height: 80px;
+  }
+
+  .cart-item-content h3 {
+    font-size: 15px;
+  }
+
+  .cart-item-price {
+    font-size: 14px;
+  }
+
+  .qty-controls button {
+    padding: 5px 9px;
+    font-size: 14px;
+  }
+
+  .remove-btn {
+    padding: 6px 10px;
+    font-size: 13px;
+  }
+
+  .cart-item-actions {
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    gap: 8px;
+  }
+}
