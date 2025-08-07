@@ -14,7 +14,7 @@ import {
 import { FaCheckCircle } from "react-icons/fa";
 
 import apiCaller from "../utils/apiCaller";
-import "../styles/PaymentSuccess.CSS"; // 🔹 Custom CSS (you'll add this below)
+import "../styles/PaymentSuccess.css"; 
 
 export default function PaymentSuccess() {
   const navigate = useNavigate();
